@@ -1,0 +1,29 @@
+Breakpoint 1, main () at p3original.c:27
+27    n= input_n();
+(gdb) s
+input_n () at p3original.c:3
+3   {
+(gdb) n
+5     printf("Enter no. of terms:\n");
+(gdb) n
+Enter no. of terms:
+6     scanf("%d" ,  &x);
+(gdb) n
+n
+7     return x;
+(gdb) n
+8   }
+(gdb) n
+main () at p3original.c:28
+28    f=sum_n(n);
+(gdb) n
+29  output (n,f);
+(gdb) s
+output (n=32748, sum=536232126) at p3original.c:22
+22    printf("your result of %d is %d", n, sum);
+(gdb) n
+23  }
+(gdb) n
+main () at p3original.c:30
+30  return 0;
+(gdb)

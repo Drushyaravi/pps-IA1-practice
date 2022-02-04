@@ -1,0 +1,85 @@
+Breakpoint 1, main () at p2original.c:60
+60    a=input();
+(gdb) s
+input () at p2original.c:3
+3   {
+(gdb) n
+5     printf("Enter a number\n");
+(gdb) n
+Enter a number
+6     scanf("%d" , &a);
+(gdb) n
+n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p2original.c:61
+61    b=input();
+(gdb) s
+input () at p2original.c:3
+3   {
+(gdb) n
+5     printf("Enter a number\n");
+(gdb) n
+Enter a number
+6     scanf("%d" , &a);
+(gdb) n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p2original.c:62
+62    c=input();
+(gdb) s
+input () at p2original.c:3
+3   {
+(gdb) n
+5     printf("Enter a number\n");
+(gdb) n
+Enter a number
+6     scanf("%d" , &a);
+(gdb) n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p2original.c:63
+63    result=cmp(a, b, c);
+(gdb) s
+cmp (a=32630, b=32630, c=32630) at p2original.c:12
+12    if (a>b && a>c)
+(gdb) n
+16    else if(b>a && b>c)
+(gdb) n
+20    else if(c>a && c>b)
+(gdb) n
+24    else if(a==b && a==c)
+(gdb) n
+26    result=4;
+(gdb) n
+32    return result;
+(gdb) n
+33  }
+(gdb) n
+main () at p2original.c:64
+64    output(result);
+(gdb) s
+output (result=4) at p2original.c:36
+36    if (result==1)
+(gdb) n
+40    else if(result==2)
+(gdb) n
+44    else if(result==3)
+(gdb) n
+48    else if(result==4)
+(gdb) n
+50    printf("All are Equal\n");
+(gdb) n
+All are Equal
+56  }
+(gdb) n
+main () at p2original.c:65
+65    return 0;
+(gdb) n
+66  }(gdb) 

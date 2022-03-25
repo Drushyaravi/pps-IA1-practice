@@ -1,0 +1,17 @@
+Breakpoint 1, main () at p6original.c:35
+35  {
+(gdb) n
+38    input_two_string(a,b);
+(gdb) n
+Enter 1st string:- n
+Enter 2nd string:- nn
+39    result=strcp(a,b);
+(gdb) n
+40    output(a,b,result);
+(gdb) n
+n is smaller than nn 
+nn is bigger than n 
+41    return 0;
+(gdb) n
+42  }
+(gdb) n

@@ -1,0 +1,12 @@
+Breakpoint 1, main () at p5original.c:39
+39    p=input();
+(gdb) n
+enter the number for sqrt
+n
+40    q=my_sqrt(p);
+(gdb) n
+41  output(p,q);
+(gdb) n
+42  return 0;
+(gdb) n
+43  }(gdb)

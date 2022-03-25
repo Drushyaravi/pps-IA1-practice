@@ -1,0 +1,18 @@
+Breakpoint 1, main () at p7original.c:34
+34    a=input_chellox();
+(gdb) n
+Enter the real and imaginary parts of a complex number: 
+n
+35    b=input_chellox();
+(gdb) n
+Enter the real and imaginary parts of a complex number: 
+n
+36    c=add(a,b);
+(gdb) n
+37    output(a,b,c);
+(gdb) n
+(-0.000000 +i 0.000000) +(-0.000000 +i 0.000000)=(-0.000000 +i 0.000000)
+38    return 0;
+(gdb) n
+39  }
+(gdb) n

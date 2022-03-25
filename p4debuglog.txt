@@ -9,7 +9,7 @@ n
 (gdb) n
 22    output (a, b, sum);
 (gdb) n
-sum of 2 numbers 21885 and 116268880 is 116290765
+sum of 2 numbers 22025 and 983740960 is 983762985
 23    return 0;
 (gdb) n
 24  }
